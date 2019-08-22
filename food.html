@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Indian Food !</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+		<style>
+		*{
+		margin: 0;
+		padding: 0;
+		font-family: 'Red Hat Display', sans-serif;
+		}
+		body{
+			overflow-x: hidden;
+		}
+		.nav_bar{
+			background-color: black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 5px 20px 20px grey;
+			position: fixed;
+			width: 100%;
+			z-index: 10;
+			min-width: 500px;
+		}
+		.nav_bar ul{
+			margin-left: auto;
+			margin-right: 6px;
+		}
+		.nav_bar ul img{
+			position: relative;
+			margin-right: auto;
+			margin-left: 10px;
+		}
+		.nav_bar ul li{
+			display: inline-block;
+			margin-left: 10px;
+		}
+		.nav_bar ul li a{
+			color: white;
+			padding: 0px 20px 0px 20px;
+			text-decoration: none;
+			font-size: 1.2rem;
+		display: flex;
+			background-color: transparent;
+			align-items: center;
+			height: 70px;
+			transition: 0.2s ease;
+		}
+		.nav_bar ul li a:hover{
+			background-color: red;
+		}
+		.nav_bar ul li.active a{
+			background-color: red;
+			box-shadow: inset 0px 10px 20px yellow;
+		}
+		.content{
+			margin-top: 100px;
+			position: absolute;
+			width: 99%;
+		}
+		.heading{
+			font-weight: 100;
+			font-size: 3rem;
+			width: 99%;
+			border-bottom: 1.5px solid grey;
+			padding-left: 20px;
+			margin-left: 20px;
+			font-family: 'Lora', serif;
+		}
+		.content p{
+			margin: 25px;
+		}
+		.content img{
+			width: 300px;
+			height: 280px;
+			margin: 15px;
+		}
+		.footnote{
+			margin: 50px;
+			font-size: 20px;
+		}
+		.footnote a{
+			color: darkred;
+			text-decoration: none;
+			transition: 0.4s ease;
+		}
+		.footnote a:hover{
+			color: green;
+			text-decoration: underline;
+		}
+		.copyright{
+			margin: 60px;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class="nav_bar">
+				<img src="logo.png" height="70" width="auto" class="logo">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="travel.html">Travel</a></li>
+					<li class="active"><a href="food.html">Food</a></li>
+					<li><a href="culture.html">Culture</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<h1 class="heading">Indian Food</h1>
+				<p>
+					Well, so now you are in the most gorgeous part of India,.. No, No ! I am not talking about any place to visit...I'm talking
+					about Indian Food, for which India is famous worldwide !
+					From the delicious street foods, through the mouth-watering
+					Pani-poories, G.I tag winner Rasogollas of West Bengal, Bhel Poories of Mumbai, Idli-Dosa of Tamil-Nadu to the royal Biriyani, India will not allow you to return home without tasting those items !
+				</p>
+				<center>
+				<img src="samosa.jpg">
+				<img src="macher_jhol.jpg">
+				<img src="langcha.jpg">
+				<img src="loochi_aloo_dum.jpg">
+				<img src="chicken_biriyani.jpg">
+				</center>
+				<div class="footnote">
+					<a href="https://edition.cnn.com/travel/article/indian-food-dishes/index.html" target="_blank">Here</a>&nbsp; is a detailed study on Indian Foods ! <br>
+					<a href="http://www.thrillophilia.com/blog/indian-street-foods/" target="_blank">Here</a>&nbsp; are some top Indian Street Foods that you can't miss !
+				</div>
+				<div class="copyright">&copy; Copyright, made for Codecademy
+				Project Showcase, August 2019</div>
+			</div>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Welcome to India !</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+		<style>
+			*{
+		margin: 0;
+		padding: 0;
+		font-family: 'Red Hat Display', sans-serif;
+		}
+		#header{
+			height: 100vh;
+			background : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("back.jpg");
+			background-position: center;
+			background-size: cover;
+
+		}
+		.nav_bar{
+			background-color: black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 5px 20px 20px grey;
+			position: fixed;
+			width: 100%;
+
+		}
+		.nav_bar ul{
+			margin-left: auto;
+			margin-right: 6px;
+		}
+		.nav_bar ul img{
+			position: relative;
+			margin-right: auto;
+			margin-left: 10px;
+		}
+		.nav_bar ul li {
+			display: inline-block;
+			margin-left: 10px;
+		}
+		.nav_bar ul li a{
+			color: white;
+			padding: 0px 20px 0px 20px;
+			text-decoration: none;
+			font-size: 1.2rem;
+		    display: flex;
+			background-color: transparent;
+			align-items: center;
+			height: 70px;
+			transition: 0.2s ease;
+		}
+		.nav_bar ul li a:hover{
+			background-color: red;
+		}
+		.nav_bar ul li.active a{
+			background-color: red;
+			box-shadow: inset 0px 10px 20px yellow;
+		}
+		.hero{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-size: 3rem;
+		}
+		.button{
+			position: absolute;
+			top: 65%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-size: 1.2rem;
+			padding: 10px 30px;
+			border: 1.2px solid white;
+			text-decoration: none;
+			border-radius: 40px;
+			transition: 0.6s ease;
+		}
+		.button:hover{
+			background-color: darkorange;
+			color: black;
+			border: 1.2px solid darkorange;
+		}
+
+</style>
+	</head>
+	<body>
+		<main>
+
+
+
+
+			<header id="header">
+				<div class="nav_bar">
+					<img src="logo.png" height="70" width="auto" class="logo">
+					<ul>
+						
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="travel.html">Travel</a></li>
+						<li><a href="food.html">Food</a></li>
+						<li><a href="culture.html">Culture</a></li>
+					</ul>
+				</div>
+				<h1 class="hero">Welcome to my India !
+				</h1><p class="description">A place for Indian facts and news !</p>
+				<a href="video.html" class="button">Watch a special Video</a>
+				</header>
+
+
+
+
+
+
+
+
+
+
+			</main>
+		</body>
+	</html>

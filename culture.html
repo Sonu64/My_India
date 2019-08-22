@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Indian Culture !</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+		<style>
+		*{
+		margin: 0;
+		padding: 0;
+		font-family: 'Red Hat Display', sans-serif;
+		}
+		body{
+			overflow-x: hidden;
+		}
+		.nav_bar{
+			background-color: black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 5px 20px 20px grey;
+			position: fixed;
+			width: 100%;
+			z-index: 10;
+			min-width: 500px;
+		}
+		.nav_bar ul{
+			margin-left: auto;
+			margin-right: 6px;
+		}
+		.nav_bar ul img{
+			position: relative;
+			margin-right: auto;
+			margin-left: 10px;
+		}
+		.nav_bar ul li {
+			display: inline-block;
+			margin-left: 10px;
+		}
+		.nav_bar ul li a{
+			color: white;
+			padding: 0px 20px 0px 20px;
+			text-decoration: none;
+			font-size: 1.2rem;
+		display: flex;
+			background-color: transparent;
+			align-items: center;
+			height: 70px;
+			transition: 0.2s ease;
+		}
+		.nav_bar ul li a:hover{
+			background-color: red;
+		}
+		.nav_bar ul li.active a{
+			background-color: red;
+			box-shadow: inset 0px 10px 20px yellow;
+		}
+		.content{
+			margin-top: 100px;
+			position: absolute;
+			width: 99%;
+		}
+		.heading{
+			font-weight: 100;
+			font-size: 3rem;
+			width: 99%;
+			border-bottom: 1.5px solid grey;
+			padding-left: 20px;
+			margin-left: 20px;
+			font-family: 'Lora', serif;
+		}
+		.content p{
+			margin: 25px;
+		}
+			.content img{
+			width: 300px;
+			height: 280px;
+			margin: 15px;
+		}
+		.copyright{
+			margin: 60px;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		</style>
+	</head>
+	<body>
+		<main>
+			
+			<div class="nav_bar">
+				<img src="logo.png" height="70" width="auto" class="logo">
+				<ul>
+					
+					<li><a href="index.html">Home</a></li>
+					<li><a href="travel.html">Travel</a></li>
+					<li><a href="food.html">Food</a></li>
+					<li class="active"><a href="culture.html">Culture</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<h1 class="heading">Indian Culture</h1>
+				<p>
+					India is a diverse nation full of diverse culture in
+					different states. Gujarat is famous for the famous
+					'Garba' dance, West Bengal is famous for The Durga Puja,
+					Ganesh Chaturthy is celebrated with great jeal in Maharashtra.
+					Not only festivals, but also India is really great in
+					establishing friendship bond between people of all kinds who come to visit India.
+					Diverse clothing, awesome food, traditional customs
+					, rich humanity is all that makes India one of the most culturally prosperous nations of the world !
+				</p>
+				
+				<center>
+				<img src="culture_pic1.jpg">
+				<img src="culture_pic2.jpg">
+				<img src="culture_pic3.jpg">
+				<img src="culture_pic4.jpg">
+				<img src="culture_pic5.jpg">
+				<img src="culture_pic6.jpg">
+				<img src="culture_pic7.jpeg">
+				<img src="culture_pic8.jpg">
+				<img src="culture_pic9.jpg">
+				<img src="culture_pic10.jpg">
+				<img src="culture_pic11.jpg">
+				<img src="culture_pic12.jpg">
+				</center>
+
+				<div class="copyright">&copy; Copyright, made for Codecademy
+				Project Showcase, August 2019</div>
+			</div>
+		</div>
+		
+	</main>
+</body>
+</html>
